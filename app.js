@@ -5,6 +5,7 @@ const debug = require("debug")("app");
 const app = express();
 const PORT = process.env.PORT || 4000;
 const path = require("path");
+const products = require("./data/products.json");
 const productRounter = express.Router();
 
 app.use(morgan("combined"));
@@ -14,14 +15,9 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
 productRounter.route("/").get((req, res) => {
-  res.render("Products",{
-    products: [
-        {productTitle:'นำเยาลางจาน',productDescription:'ล้างสะอาด',productPrice: 40},
-        {productTitle:'นำเยาลางจาน2',productDescription:'ล้างสะอาด2',productPrice: 42},
-        {productTitle:'นำเยาลางจาน3',productDescription:'ล้างสะอาด3',productPrice: 43},
-        {productTitle:'นำเยาลางจาน4',productDescription:'ล้างสะอาด4',productPrice: 44},
-    ]
-  });
+  res.render("Products",
+    products,
+  );
 });
 app.use("/products", productRounter);
 
