@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "productTitle": "นำเยาลางจาน",
+        "productDescription": "ล้างสะอาด",
+        "productPrice": 40
+    },
+    {
+        "id": 1,
+        "productTitle": "นำเยาลางจาน2",
+        "productDescription": "ล้างสะอาด2",
+        "productPrice": 42
+    },
+    {
+        "id": 2,
+        "productTitle": "นำเยาลางจาน3",
+        "productDescription": "ล้างสะอาด3",
+        "productPrice": 43
+    },
+    {
+        "id": 3,
+        "productTitle": "นำเยาลางจาน4",
+        "productDescription": "ล้างสะอาด4",
+        "productPrice": 44
+    }
+]
